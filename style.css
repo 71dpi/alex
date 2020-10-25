@@ -4,43 +4,43 @@ body {
 }
 p {
   font-family: HelveticaNeue;
-  font-size: 12px;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: 0;
-  line-height: 18px;
+  line-height: 1.5rem;
 }
 h1 {
   font-family: HelveticaNeue-Bold;
-  font-size: 24px;
+  font-size: 3rem;
   color: rgba(0, 0, 0, 0.85);
-  letter-spacing: -1px;
-  line-height: 36px;
+  letter-spacing: -0.1rem;
+  line-height: 3rem;
 }
 h2 {
   font-family: HelveticaNeue-Bold;
-  font-size: 24px;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.85);
-  letter-spacing: -1px;
-  line-height: 36px;
+  letter-spacing: -0.1rem;
+  line-height: 2rem;
 }
 h3 {
   font-family: HelveticaNeue-Bold;
-  font-size: 18px;
+  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.85);
-  letter-spacing: 2.25px;
-  line-height: 24px;
+  letter-spacing: -0.2rem;
+  line-height: 1.5rem;
 }
 h4 {
   font-family: HelveticaNeue-Bold;
-  font-size: 12px;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: 0;
-  line-height: 12px;
+  line-height: 1rem;
 }
 li {
   font-family: HelveticaNeue;
-  font-size: 12px;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: 0;
-  line-height: 18px;
+  line-height: 1rem;
 }
