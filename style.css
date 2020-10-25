@@ -42,5 +42,21 @@ li {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: 0;
-  line-height: 1rem;
+  line-height: 1.5rem;
+}
+
+#header {
+  background-image: none;
+  background-position: top left;
+  background-size: auto;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #fff200;
 }
