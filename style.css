@@ -54,12 +54,12 @@ li {
   background-size: auto;
   background-attachment: scroll;
   background-repeat: repeat;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 0px 0;
+  padding: 0px 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #fff200;
 }
