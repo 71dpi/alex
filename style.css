@@ -19,7 +19,6 @@ header {
 }
 #logo {
   display: inline-block;
-  float: left;
   margin-left: 10%;
 }
 .logo-link {
@@ -51,9 +50,6 @@ nav {
   line-height: 4rem;
 }
 
-#main-menu{
-  
-}
 .nav-links {
   margin:0;
 }
