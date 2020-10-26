@@ -57,6 +57,9 @@ a:visited {
   position: relative;
   color: #6236ff;
 }
+a:hover {
+  color: #4d25e0;
+}
 a:after,
 a:visited:after {
   content: "";
@@ -130,5 +133,5 @@ a.ani-link:visited:hover:after {
 }
 
 #clear-header {
-  height: 6rem;
+  margin-top: 100px;
 }
