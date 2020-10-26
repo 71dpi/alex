@@ -91,6 +91,12 @@ a:visited:hover:after {
 #logo {
   display: block;
   float: left;
+  margin-left: -20px;
+}
+
+a.logo-link:after,
+a.logo-link:visited:after {
+  display: none;
 }
 
 nav {
