@@ -57,6 +57,7 @@ li {
   padding: 0px 10%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #fff200;
+  line-height: 100px;
 }
 
 #logo {
@@ -70,10 +71,37 @@ nav {
 }
 
 .nav-link {
-  display: block;
+  display: inline-block;
   padding: 0;
   margin: 0 60px 0 0;
   float: left;
+  vertical-align: -webkit-baseline-middle;
+  font-family: HelveticaNeue-Bold;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.85);
+  letter-spacing: 0rem;
+}
+
+a.ani-link,
+a.ani-link:visited {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+}
+a.ani-link:after,
+a.ani-link:visited:after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: #000;
+  transition: 0.4s;
+}
+a.ani-link:hover:after,
+a.ani-link:visited:hover:after {
+  width: 100%;
 }
 
 #clear-header {
