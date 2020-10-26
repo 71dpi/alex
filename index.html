@@ -6,31 +6,46 @@
     <title>Alex Lockwood's Website</title>
   </head>
   <body>
-    <div id="header">
-      <div id="logo">
-        <a class="logo-link" href="/index.html" title="back to homepage" rel="homepage">
-          <picture>
-            <source media="(min-width:650px)" srcset="img/alexlockwood-logo-2x.webp" style="height:100px;">
-              <source media="(min-width:650px)" srcset="img/alexlockwood-logo-2x.png" style="height:100px;">
-            <source media="(max-width:465px)" srcset="img/alexlockwood-logo.webp" style="height:100px;">
-              <source media="(max-width:465px)" srcset="img/alexlockwood-logo.png" style="height:100px;">
-            <img src="img/alexlockwood-logo.png" alt="Alex Lockwood Logo" style="height:100px;">
-          </picture>
-        </a>
-      </div>
-      <nav>
-        <div class="nav-link">
-              <a class="ani-link" href="/about">About</a>
-        </div>
-        <div class="nav-link">
-              <a class="ani-link" href="/portfolio">Portfolio</a>
-        </div>
-        <div class="nav-link">
-              <a class="ani-link" href="/contact">Contact</a>
-        </div>
-      </nav>
-  </div>
-    <div id="clear-header">&nbsp;</div>
+      <input id="main-menu-checkbox" type="checkbox">
+
+      <header>
+          <div id="logo">
+              <a class="logo-link" href="/index.html" title="back to homepage" rel="homepage">
+                <picture>
+                  <source media="(min-width:650px)" srcset="img/alexlockwood-logo-2x.webp" style="height:100px;">
+                    <source media="(min-width:650px)" srcset="img/alexlockwood-logo-2x.png" style="height:100px;">
+                  <source media="(max-width:465px)" srcset="img/alexlockwood-logo.webp" style="height:100px;">
+                    <source media="(max-width:465px)" srcset="img/alexlockwood-logo.png" style="height:100px;">
+                  <img src="img/alexlockwood-logo.png" alt="Alex Lockwood Logo" style="height:100px;">
+                </picture>
+              </a>
+            </div>        <label for="main-menu-checkbox" class="menu-toggle">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true">Menu</span>
+        </label>
+        <nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+          <label for="main-menu-checkbox"class="menu-close">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true">Menu</span>
+          </label>
+          <ul>
+            <li class="nav-link"><a href="#">Products</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <label for="main-menu-checkbox"
+           class="backdrop"
+           tabindex="-1"
+           aria-hidden="true" hidden></label>
+      </header>
+      
+      <!--
+       Demo purposes only.
+       Lots of text = scroll testing!
+      -->
+      <article>
+
     <h1><abbr title="User Experience">UX</abbr> + CREATIVE DIRECTION + <abbr title="Management & Direction">MGMT</abbr> + DESIGN</h1>
     <p>I recognize patterns. I hate when things are more difficult than they need to be. I can harness patterns to make things clearer. I can make it real pretty so it doesn't offend the senses. That being said, my handle across the internet is <a href="http://www.twitter.com/71dpi" title="Alex on Twitter" rel="external, twitter.com">@71dpi</a> because I firmly believe that a good idea and clear communication is always more important than visual resolution or aesthetic. No problem was ever solved in 4k that couldn't have been solved in 720p.</p>
     <p>I'm an activator. I bring people together around an idea. I may not dance, but I'll be the first at the party to suggest a board game or a good drink. I appreciate the collective energy and knowledge working in a group gives me access to. I'm good at organizing people and processes to get things done.</<p>
