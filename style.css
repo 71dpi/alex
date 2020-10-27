@@ -21,6 +21,9 @@ header {
   display: inline-block;
   margin-left: 10%;
 }
+a.logo-link {
+  color: #000;
+}
 .logo-link {
   font-family: HelveticaNeue-Bold;
   font-size: 2rem;
@@ -151,4 +154,19 @@ a.ani-link:visited:hover:after {
 
 #clear-header {
   margin-top: 100px;
+}
+.tile {
+  width:50%;
+  float: left;
+  background: #fff200;
+  text-align: center;
+}
+.tile2 {
+  background: #eee;
+  width:50%;
+  float: left;
+  text-align: center;
+}
+.tile-text {
+  line-height: 3rem;
 }
