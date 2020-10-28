@@ -1,14 +1,3 @@
-@media screen and (min-width: 800px) {
-  a.logo-link {
-    font-size: 3rem;
-  }
-  nav {
-    display: block;
-    float: none;
-    text-align: center;
-}
-  p {font-size:2rem;}
-}
 html {
   font-size: 21px;
 }
