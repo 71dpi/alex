@@ -144,6 +144,13 @@ li {
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: 0;
   line-height: 1.5rem;
+  font-family: charter, Georia, Cambria, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    initial-letter: 0rem;
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 abbr {
   text-decoration-color: #fff200;
