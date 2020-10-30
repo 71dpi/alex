@@ -79,7 +79,7 @@ div.example {
 }
   p {
     font-family: charter, Georia, Cambria, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 400;
     initial-letter: 0rem;
@@ -88,9 +88,9 @@ div.example {
     -webkit-font-smoothing: antialiased;
     color: rgba(0, 0, 0, 0.85);
     letter-spacing: 0;
-    line-height: 3rem;
+    line-height: 4rem;
   }
-  @media (min-width:768px) {
+  @media screen and (min-width:768px) {
   p {
     font-size: 1rem;
     line-height: 2rem;
