@@ -77,8 +77,6 @@ div.example {
   background-color: lightgrey;
   padding: 20px;
 }
-
-@media only screen and (max-width:480px) {
   p {
     font-family: charter, Georia, Cambria, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
@@ -88,26 +86,16 @@ div.example {
     overflow-wrap: break-word;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    color: rgba(255, 0, 0, 0.85);
+    color: rgba(0, 0, 0, 0.85);
     letter-spacing: 0;
     line-height: 3rem;
   }
-  }
-
+  @media only screen and (min-width:768px) {
   p {
-    font-family: charter, Georia, Cambria, 'Times New Roman', Times, serif;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    initial-letter: 0rem;
-    overflow-wrap: break-word;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    color: rgba(0, 0, 0, 0.85);
-    letter-spacing: 0;
     line-height: 2rem;
   }
-
+  }
 
 
 
