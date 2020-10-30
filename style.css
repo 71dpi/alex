@@ -1,6 +1,8 @@
 html {
   font-size: 21px;
 }
+@media(min-width:600px)
+{html {font-size: 150%; background-color: red;}}
 body {
   padding: 0;
   margin: 0;
@@ -73,13 +75,9 @@ select#nav-menu{
 
 #content {display: inline-block; margin:0 10%;}
 
-div.example {
-  background-color: lightgrey;
-  padding: 20px;
-}
   p {
     font-family: charter, Georia, Cambria, 'Times New Roman', Times, serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     initial-letter: 0rem;
@@ -88,16 +86,8 @@ div.example {
     -webkit-font-smoothing: antialiased;
     color: rgba(0, 0, 0, 0.85);
     letter-spacing: 0;
-    line-height: 4rem;
+    line-height: 3rem;
   }
-  @media screen and (min-width:768px) {
-  p {
-    font-size: 1rem;
-    line-height: 2rem;
-  }
-  }
-
-
 
 h1 {
   font-family: HelveticaNeue-Bold;
