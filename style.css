@@ -1,7 +1,7 @@
 html {
   font-size: 21px;
 }
-@media(min-width:800px)
+@media(min-width:900px)
 {html {font-size: 150%; background-color: red;}}
 body {
   padding: 0;
