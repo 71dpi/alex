@@ -3,10 +3,8 @@ html {
 }
 body{margin:0;
   padding:0;}
-  @media (max-width:768px){html {font-size: 2rem; background-color:purple;}}
+  @media screen and (max-width:900px){html {font-size: 2rem; background-color:purple;}}
 
-  @media (orientation:landscape)
-{html {font-size: .8rem; background-color: red;}}
 header {
   display: inline-block;
   width: 100%;
