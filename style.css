@@ -1,12 +1,12 @@
 html {
   font-size: 21px;
 }
-@media (orientation:landscape)
-{html {font-size: 150%; background-color: red;}}
-body {
-  padding: 0;
-  margin: 0;
-}
+body{margin:0;
+  padding:0;}
+  @media (max-width:768px){font-size: 2rem;}
+
+  @media (orientation:landscape)
+{html {font-size: .8rem; background-color: red;}}
 header {
   display: inline-block;
   width: 100%;
