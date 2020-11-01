@@ -1,5 +1,5 @@
-html {font-size: 21px;}
-@media screen and (max-width:400px){html {font-size: 1rem; background-color:green;}}
+html {font-size: 16px;}
+
 
 body{margin:0;
   padding:0;}
@@ -25,13 +25,13 @@ a.logo-link,a.logo-link:visited {
 }
 .logo-link {
   font-family: HelveticaNeue-Bold;
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: -0.1rem;
   line-height: 4rem;
 }
 .big-emoji {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 a.big-emoji {text-decoration: none;}
 nav {
@@ -50,7 +50,10 @@ select#nav-menu{
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
-    display: inline-block;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 0px;
     text-align: start;
     appearance: menulist;
     box-sizing: border-box;
@@ -59,7 +62,7 @@ select#nav-menu{
     -webkit-rtl-ordering: logical;
     background-color: rgba(0, 0, 0, 0);
     cursor: default;
-    margin: 0rem;
+    margin: 0 10% 0 0;
     padding: 0.2rem;
     font-size: 1rem;
     font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -88,10 +91,10 @@ select#nav-menu{
 
 h1 {
   font-family: HelveticaNeue-Bold;
-  font-size: 4rem;
+  font-size: 3rem;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: -0.1rem;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 h2 {
   font-family: HelveticaNeue-Bold;
@@ -195,4 +198,27 @@ a.ani-link:visited:hover:after {
 }
 .tile-text {
   line-height: 3rem;
+}
+
+
+
+/* make it bigger for desktop */
+
+
+@media screen and (min-width:400px){
+  html {
+    font-size: 1rem; background-color:#fef;
+  }
+  h1{
+    font-size: 5rem; line-height: 5rem;
+  }
+  .logo-link {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.85);
+    letter-spacing: -0.1rem;
+    line-height: 4rem;
+  }
+  .big-emoji {
+    font-size: 4rem;
+  }
 }
