@@ -3,7 +3,7 @@ html {
 }
 body{margin:0;
   padding:0;}
-  @media screen and (max-width:900px){html {font-size: 2rem; background-color:purple;}}
+  @media screen and (max-width:400px){html {font-size: 2rem; background-color:purple;}}
 
 header {
   display: inline-block;
