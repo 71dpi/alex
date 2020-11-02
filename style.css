@@ -1,7 +1,9 @@
 html {font-size: 16px;}
+
 body{margin:0;
   padding:0;}
-header {
+
+  header {
   display: inline-block;
   width: 100%;
   box-sizing: inherit;
@@ -13,6 +15,7 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #fff200;
 }
+
 #logo {
   display: inline-block;
   margin-left: 10%;
