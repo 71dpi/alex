@@ -63,9 +63,45 @@
       <li><a href="http://www.dribbble.com/71dpi" title="Alex's Works in Progress and explorations on Dribbble" rel="external, dribbble.com">See more visual exploration on Dribbble</a></li>
     </ul>
   </div>
-  <img src="img/about1.png" class="tile pic-tile">
-  <img src="img/about2.png" class="tile pic-tile">
-  <img src="img/about3.jpg" class="tile pic-tile">
-  <img src="img/about4.png" class="tile pic-tile">
+  <picture>
+    <source srcset="img/about1.webp"
+        type="image/webp">
+    <img 
+        srcset="img/about1.png"
+        sizes="(min-width: 768px)"
+            src="img/about1.png" 
+         alt="Illustration of a Dolorean car from Back to the Future"
+        class="tile pic-tile">
+    </picture>
+    <picture>
+      <source srcset="img/about2.webp"
+          type="image/webp">
+      <img 
+          srcset="img/about2.png"
+          sizes="(min-width: 768px)"
+              src="img/about2.png" 
+           alt="Illustration of an X ray showing a heart"
+          class="tile pic-tile">
+      </picture>
+  <picture>
+    <source srcset="img/about3.webp"
+        type="image/webp">
+    <img 
+        srcset="img/about3.jpg"
+        sizes="(min-width: 768px)"
+            src="img/about3.jpg" 
+          alt="Portrait photo of Alex Lockwood"
+        class="tile pic-tile">
+    </picture>
+  <picture>
+    <source srcset="img/about4.webp"
+        type="image/webp">
+    <img 
+        srcset="img/about4.png"
+        sizes="(min-width: 768px)"
+            src="img/about4.png" 
+         alt="Illustration of a bowl of rice with a happy face"
+        class="tile pic-tile">
+    </picture>
   </body>
 </html>
