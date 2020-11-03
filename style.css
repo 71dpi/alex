@@ -216,6 +216,7 @@ a.ani-link:visited:hover:after {
   line-height: 6rem;
 }
 .pic-tile {margin: 0;}
+.pic-inline {width: 100%; margin-top: 2rem;}
 
 
 
