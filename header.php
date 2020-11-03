@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <title>Alex Lockwood's Website</title>
+  <title><?php echo $title; ?></title>
 </head>
 <body>
-  <header>
+<header>
     <div id="logo">
-      <a class="logo-link" href="index.html" title="Alex Lockwood, click to go back to homepage" rel="homepage">
+      <a class="logo-link" href="index.php" title="Alex Lockwood, click to go back to homepage" rel="homepage">
       <span class="big-emoji">&#129300;</span>&nbsp;Alex Lockwood</a>
     </div>
     <nav>
       <select title="Site Navigation" name="nav-menu" id="nav-menu">
         <option value="0">&#8942; Menu</option>
         <optgroup label="Where to?">
-            <option value="index.html">Home</option>
-            <option value="page2.html">About</option>
+            <option value="index.php">Home</option>
+            <option value="page2.php">About</option>
             <option value="google.html">Projects</option>
             <option value="index.html">Contact</option>
         </optgroup>
@@ -30,12 +30,3 @@
       </script>
     </nav>    
   </header>
-  <div id="content">
-    <h1>A second page! About Me</h1>
-    <p>Real human bean.</p>
-  </div>
-  <div class="tile"><span class="tile-text">adfasdf</span></div>
-  <div class="tile tile2"><span class="tile-text">adfasdf</span></div>
- 
-</body>
-</html>
