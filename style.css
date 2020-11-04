@@ -3,7 +3,7 @@ html {font-size: 16px;}
 body{margin:0;
   padding:0;}
 
-  header {
+header {
   display: inline-block;
   width: 100%;
   box-sizing: inherit;
@@ -22,9 +22,6 @@ body{margin:0;
   display: inline-block;
   margin-left: 10%;
 }
-a.logo-link,a.logo-link:visited {
-  color: rgba(0, 0, 0, 0.85);
-}
 .logo-link {
   font-family: HelveticaNeue-Bold;
   font-size: 2rem;
@@ -32,6 +29,11 @@ a.logo-link,a.logo-link:visited {
   letter-spacing: -0.1rem;
   line-height: 4rem;
 }
+a.logo-link,a.logo-link:visited,a.logo-link:hover {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+}
+
 .big-emoji {
   font-size: 3rem;
 }
@@ -41,7 +43,9 @@ nav {
   float: right;
   margin-right: 10%;
 }
-
+a.logo-typography:hover{
+  text-decoration: solid wavy 1px #6236ff;
+}
 select#nav-menu{
   writing-mode: horizontal-tb !important;
   -webkit-writing-mode: horizontal-tb !important;
@@ -144,14 +148,14 @@ li {
   letter-spacing: 0;
   line-height: 1.5rem;
   font-family: charter, Georia, Cambria, 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: 400;
-    initial-letter: 0rem;
-    overflow-wrap: break-word;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    margin-left: -0.5rem;
-    padding-bottom: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  initial-letter: 0rem;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  margin-left: -0.5rem;
+  padding-bottom: 1rem;
 }
 abbr {
   text-decoration-color: #fff200;
@@ -165,44 +169,9 @@ a:visited {
 }
 a:hover {
   color: #4d25e0;
-}
-a:after,
-a:visited:after {
-  content: "";
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  background: #6236ff;
-  transition: 0.4s;
-}
-a:hover:after,
-a:visited:hover:after {
-  width: 100%;
+  text-decoration: underline #4d25e0;
 }
 
-a.ani-link,
-a.ani-link:visited {
-  text-decoration: none;
-  position: relative;
-  color: #000;
-}
-a.ani-link:after,
-a.ani-link:visited:after {
-  content: "";
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  background: #000;
-  transition: 0.4s;
-}
-a.ani-link:hover:after,
-a.ani-link:visited:hover:after {
-  width: 100%;
-}
 
 #clear-header {
   margin-top: 100px;
