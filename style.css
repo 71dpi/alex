@@ -284,9 +284,11 @@ button.big-button {
     padding: 1rem 4rem;
     margin: 1rem 10% 2rem;
     border: none;
-    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
     font-family: Helvetica Neue, Helvetica, sans-serif;
-    border-radius: .5rem;
+    border-radius: .25rem;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0);
