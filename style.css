@@ -1,5 +1,6 @@
 html {
     font-size: 16px;
+    font-family: HelveticaNeue, Helvetica, Arial sans-serif;
 }
 
 body {
@@ -168,10 +169,10 @@ h5 {
 
 h6 {
     font-family: HelveticaNeue-Bold;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: #4d25e0;
     letter-spacing: 0;
-    line-height: 1rem;
+    line-height: 1.2rem;
     margin: 2rem 10%;
     padding: 0 1.1rem;
 }
@@ -318,6 +319,32 @@ button.big-button:active {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.footer-center {
+    display: block;
+    text-align: center;
+    margin: 3rem 0;
+    font-size: .75rem;
+    color: #555;
+    clear: both;
+}
+
+button.scroll-to-top {
+    color: #3617a8;
+    background-color: transparent;
+    padding: 1rem 4rem;
+    margin: 0 10% 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    border-radius: .25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .1);
+    width: -webkit-fill-available;
+    cursor: pointer;
 }
 
 
