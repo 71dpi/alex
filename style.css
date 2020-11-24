@@ -336,9 +336,13 @@ button.big-button:active {
 }
 
 .footer-social {
-    width: 2.5rem;
+    width: 2rem;
     padding: 0 .25rem;
     margin: 2rem 0 0;
+}
+
+a.no-style {
+    text-decoration: none;
 }
 
 button.scroll-to-top {
