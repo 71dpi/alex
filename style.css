@@ -236,6 +236,11 @@ a:hover {
     margin-top: 100px;
 }
 
+.twitter-tweet-rendered {
+    width: 80% !important;
+    margin: 0 10% 2rem !important;
+}
+
 .tile {
     width: 50%;
     background: #fff200;
@@ -328,6 +333,12 @@ button.big-button:active {
     font-size: .75rem;
     color: #555;
     clear: both;
+}
+
+.footer-social {
+    width: 2.5rem;
+    padding: 0 .25rem;
+    margin: 2rem 0 0;
 }
 
 button.scroll-to-top {
