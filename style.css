@@ -88,7 +88,7 @@ select#nav-menu {
     margin: 0 10% 0 0;
     padding: 0.2rem 0.2rem 0.2rem 0.75rem;
     font-size: 1rem;
-    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'Inter', Helvetica Neue, Helvetica, sans-serif;
     border-radius: .5rem;
     border-width: 1px;
     border-style: solid;
@@ -120,8 +120,9 @@ p {
 }
 
 h1 {
-    font-family: HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
+    font-family: 'Inter', HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
     font-size: 2.5rem;
+    font-weight: 200;
     color: rgba(0, 0, 0, 0.85);
     letter-spacing: -0.1rem;
     line-height: 2.5rem;
@@ -129,7 +130,7 @@ h1 {
 }
 
 h2 {
-    font-family: HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
+    font-family: 'Inter', HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
     font-size: 2rem;
     color: rgba(0, 0, 0, 0.85);
     letter-spacing: -0.1rem;
@@ -139,7 +140,7 @@ h2 {
 }
 
 h3 {
-    font-family: HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
+    font-family: 'Inter', HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
     font-size: 1.25rem;
     color: rgba(0, 0, 0, 0.85);
     letter-spacing: -0.05rem;
@@ -149,7 +150,7 @@ h3 {
 }
 
 h4 {
-    font-family: HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
+    font-family: 'Inter', HelveticaNeue-Bold, Helvetica Bold, Arial Bold sans-serif;
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.85);
     letter-spacing: 0;
@@ -159,7 +160,7 @@ h4 {
 }
 
 h5 {
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Inter', HelveticaNeue-Bold;
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.85);
     letter-spacing: 0;
@@ -168,7 +169,7 @@ h5 {
 }
 
 h6 {
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Inter', HelveticaNeue-Bold;
     font-size: 0.85rem;
     color: #4d25e0;
     letter-spacing: 0;
@@ -179,11 +180,11 @@ h6 {
 
 .back {
     margin: 1rem 10% -2rem;
-    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'Inter', Helvetica Neue, Helvetica, sans-serif;
 }
 
 .tldr-label {
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Inter', HelveticaNeue-Bold;
     font-size: 0.75rem;
     color: rgba(0, 0, 0, 0.65);
     letter-spacing: 0;
@@ -247,7 +248,7 @@ a:hover {
     float: left;
     margin: 1rem 0;
     font-size: 1rem;
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Inter', HelveticaNeue-Bold;
     text-transform: uppercase;
 }
 
@@ -353,7 +354,7 @@ button.scroll-to-top {
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     font-weight: 600;
-    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'Inter', Helvetica Neue, Helvetica, sans-serif;
     border-radius: .25rem;
     border-width: 1px;
     border-style: solid;
