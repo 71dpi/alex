@@ -12,6 +12,13 @@ select {
     letter-spacing: 0.25rem;
     font-weight: 600;
     color: rgba (0 0 0 0.8);
+    transition: all .2s ease-in-out;
+}
+
+select#nav-menu:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -257,7 +264,8 @@ a:hover {
 }
 
 .tile-text {
-    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
     font-size: .8rem;
     letter-spacing: .2rem;
     display: flex;
@@ -324,6 +332,12 @@ button.big-button:active {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+hr {
+    margin: 4rem 20%;
+    border-width: thin;
+    border-bottom: none;
 }
 
 .footer-center {
