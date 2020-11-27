@@ -200,6 +200,17 @@ h6 {
     margin: 2rem 10% 0;
 }
 
+.projects-label {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+    margin: 2rem 10% 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 ul {
     padding: 0 0 0 2rem;
     margin: 1rem 10% 2rem;
