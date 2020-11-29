@@ -236,6 +236,23 @@ li::marker {
     color: #666;
 }
 
+li.team-member {
+    font-feature-settings: "liga";
+}
+
+li.skill,
+li.responsibility {
+    padding-bottom: .5rem;
+}
+
+li.team-role {
+    color: rgba(0, 0, 0, .65);
+    list-style: none;
+    margin-top: -1rem;
+    font-size: .75rem;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
 abbr {
     text-decoration-color: #fff200;
 }
