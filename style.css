@@ -48,7 +48,15 @@ header {
 }
 
 #header-template {
-    min-height: 11rem;
+    min-height: 13rem;
+}
+
+.project-logo {
+    filter: grayscale(100%);
+}
+
+.project-logo:hover {
+    filter: none;
 }
 
 #logo {
