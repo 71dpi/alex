@@ -240,6 +240,10 @@ li.team-member {
     font-feature-settings: "liga";
 }
 
+li.extra-project {
+    font-size: 1.1rem;
+}
+
 li.skill,
 li.responsibility {
     padding-bottom: .5rem;
@@ -299,7 +303,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 6rem;
+    height: 6rem;
+    text-align: center;
 }
 
 .pic-tile {
