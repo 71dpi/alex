@@ -325,6 +325,18 @@ a:hover {
     text-align: center;
 }
 
+.tile-emoji {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    text-align: center;
+}
+
 .pic-tile {
     margin: 0;
 }
@@ -354,7 +366,7 @@ a:hover {
 button.big-button {
     color: #fff;
     background-color: #6236ff;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     margin: 1rem 10%;
     border: none;
     border-radius: .25rem;
@@ -421,7 +433,7 @@ a.no-style {
 button.scroll-to-top {
     color: #3617a8;
     background-color: transparent;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     margin: 0 10% 1rem;
     font-weight: 600;
     border-radius: .25rem;
