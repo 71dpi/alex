@@ -75,6 +75,11 @@ header {
     margin-left: 10%;
 }
 
+.site-logo {
+    width: 80%;
+    margin: 0 10%;
+}
+
 a.logo-link,
 a.logo-link:visited,
 a.logo-link:hover {
@@ -165,6 +170,7 @@ h2 {
     line-height: 2rem;
     margin: 1rem 10%;
     background-color: #fff200;
+    clear: both;
 }
 
 h3 {
@@ -342,8 +348,12 @@ a:hover {
     margin: 0;
 }
 
+.pic-clear {
+    padding-top: 2rem;
+}
+
 .big-picture-inline {
-    margin: 0 0 2rem !important;
+    margin: 0 0 2rem;
 }
 
 .pic-inline {
@@ -540,7 +550,20 @@ input:checked+.slider:before {
 @media screen and (min-width:768px) {
     html {
         font-size: 1rem;
-        background-color: #fef;
+    }
+    header {
+        height: 6rem;
+        padding: 0;
+    }
+    select#nav-menu {
+        top: 2rem;
+    }
+    .img-tile-mosaic {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .little-tile {
+        width: 25%;
     }
     h1 {
         font-size: 5rem;
@@ -554,5 +577,41 @@ input:checked+.slider:before {
     }
     .big-emoji {
         font-size: 4rem;
+    }
+    .site-logo {
+        width: 22rem;
+    }
+    .big-picture,
+    .big-picture-inline {
+        width: 80%;
+        margin: 0 10% 2rem;
+    }
+    .little-picture-inline {
+        width: 40%;
+        margin: 0 30% 2rem;
+    }
+    button.scroll-to-top,
+    button.big-button {
+        width: 30rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h6,
+    p,
+    .tldr-label,
+    ul {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .tile-emoji {
+        font-size: 6rem;
+        height: 12rem;
+    }
+    .my-dumb-face {
+        width: 20%;
+        float: left;
+        margin: 0 2rem 0 13%;
     }
 }
