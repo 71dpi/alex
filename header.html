@@ -10,20 +10,12 @@
             </picture>
         </a>
         <nav>
-            <select title="Site Navigation" name="nav-menu" id="nav-menu" accesskey="m">
+            <select title="Site Navigation" onchange="window.open(this.value,'_self');" name="nav-menu" id="nav-menu" accesskey="m">
             <option value="0">&#9776; Menu</option>
             <optgroup label="Where to?">
-
                 <option value="index.html">Home</option>
                 <option value="about.html">About</option>
                 <option value="projects.html">Projects</option>
             </optgroup>
-          </select>
-            <script type="text/javascript">
-                var urlmenu = document.getElementById('nav-menu');
-                urlmenu.onchange = function() {
-                    document.location.href = this.value;
-                };
-            </script>
         </nav>
     </header>

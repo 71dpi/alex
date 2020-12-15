@@ -4,12 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
-        $(function() {
-            $("#header-template").load("header.html");
-            $("#footer-template").load("footer.html");
-        });
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
     </script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,9 +57,7 @@
 </head>
 
 
-<div id="header-template">
-    <!--Pulls header.html content-->
-</div>
+<div w3-include-html="header.html"></div>
 
 <h1><abbr title="User Experience">UX</abbr> + Creative Direction + <abbr title="Management & Direction">MGMT</abbr> + Design</h1>
 <picture>
@@ -95,6 +119,7 @@
     <source srcset="img/about4.webp" type="image/webp">
     <img srcset="img/about4.png" sizes="(min-width: 768px)" src="img/about4.png" alt="Illustration of a bowl of rice with a happy face" class="tile pic-tile">
 </picture>
-<div id="footer-template">
-    <!--Pulls in footer.html content-->
-</div>
+<div w3-include-html="footer.html"></div>
+<script>
+    includeHTML();
+</script>

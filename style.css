@@ -45,13 +45,14 @@ header {
     margin: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     background-color: #fff200;
+    min-height: 5.2rem;
 }
 
 #header-template {
     min-height: 13rem;
 }
 
-.project-logo {
+#project-logo {
     filter: none;
 }
 
