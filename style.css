@@ -621,7 +621,7 @@
         }
     }
     
-    @media screen and (min-width:1444px) {
+    @media screen and (min-width:1440px) {
         .portfolio {
             width: 33%;
             display: inline-grid;
