@@ -3,6 +3,9 @@
     select {
         font-size: 16px;
         font-family: 'Inter', Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
     }
     
     button,
@@ -19,6 +22,10 @@
         transform: scale(1.02);
         cursor: pointer;
         border-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .desktop-menu {
+        display: none;
     }
     
     button {
@@ -540,6 +547,12 @@
     }
     /* make it bigger for desktop */
     
+    @media screen and (max-width:850px) {
+        .desktop-menu-item-home {
+            display: none;
+        }
+    }
+    
     @media screen and (min-width:768px) {
         html {
             font-size: 1rem;
@@ -550,6 +563,41 @@
         }
         select#nav-menu {
             top: 2rem;
+        }
+        .hamburger-menu {
+            display: none;
+        }
+        .desktop-menu {
+            display: block;
+            position: absolute;
+            top: 1rem;
+            right: 0px;
+        }
+        a.desktop-menu-item {
+            position: relative;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0 0 0 1.5rem;
+            top: 1.45rem;
+        }
+        a.desktop-menu-item::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: -.2rem;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0);
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+        a.desktop-menu-item:hover::before {
+            visibility: visible;
+            background-color: #6236ff;
+            transform: scaleX(1);
         }
         .img-tile-mosaic {
             width: 80%;
@@ -581,6 +629,10 @@
             width: 80%;
             margin: 1rem 10% 3rem;
         }
+        .big-picture-hd {
+            width: 100%;
+            margin: 1rem 0 3rem;
+        }
         .little-picture-inline {
             width: 40%;
             margin: 0 30% 2rem;
@@ -588,6 +640,9 @@
         button.scroll-to-top,
         button.big-button {
             width: 30rem;
+        }
+        button.big-button {
+            font-size: 1rem;
         }
         h1,
         h2,
@@ -618,6 +673,12 @@
         }
         .project-logo {
             display: inline-grid;
+        }
+        .pic-clear {
+            padding-top: 0;
+        }
+        .caption-d {
+            margin-top: -2rem;
         }
     }
     
