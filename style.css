@@ -672,6 +672,11 @@
             ul {
                 margin-left: 15%;
                 margin-right: 15%;
+                font-weight: bold;
+            }
+            ol {
+                margin-left: 15%;
+                margin-right: 15%;
             }
             .tile-emoji {
                 font-size: 6rem;
