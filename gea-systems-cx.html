@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Alex Lockwood's Website</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg">
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J92RYBWB4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1J92RYBWB4');
+    </script>
+</head>
+
+<div w3-include-html="header.html"></div>
+
+<div class="back"><a href="javascript:history.back()">&#10229; Go Back</a></div>
+<h1>GE Aviation Systems CX / UX Lead</h1>
+<div class="tldr-label">
+    TL;DR
+</div>
+<h6>For GE Aviation's Systems business, Alex led a multi-business customer experience initiative centered around access and usability of self-service digital tools.</h6>
+<picture>
+    <source media="(min-width: 1440px)" srcset="img/projects/project-template/image-hd.webp" type="image/webp">
+    <source media="(min-width: 768px)" srcset="img/projects/project-template/image-d.webp" type="image/webp">
+    <source media="(max-width: 768px)" srcset="img/projects/project-template/image.webp" type="image/webp">
+    <img src="img/projects/project-template/image.jpg" alt="testing responsive" class="big-picture big-picture-inline">
+</picture>
+<h2>Customer Journey Mapping</h2>
+<p>In 2022 I worked closely with cross-functional leadership team in a customer journey mapping and customer experience maturity program. We unpacked VOC together, and built a journey map showing customer touch points, pains, and areas of opportunity. As
+    a result, small teams were formed to work the largest areas of opportunity.
+</p>
+<h2>Program Management & Service Design</h2>
+<p>I served as the Lead service designer, researcher and UX strategist for 4 P&Ls, including 3 unique brands, in a cross-functional initiative team focused on customer-facing web applications. Alongside other active initiatives, I orchestrated and executed
+    stakeholder and user research, CX workshops, and a prioritization framework for the many problems the team uncovered and wanted to tackle. Key to the sustainment of the initiative was establishing a balanced set of customer success metrics and internal
+    KPIs. To handle change management as people were hired and shifted responsibilities to manage this project in the long term, I maintained a weekly action plan and set team cadences to work within. Some of my tactical deliverables included ecosystem
+    maps, information architecture, UX flows, UI screens, design system components, and an exhaustive set of well defined epics and user stories.
+</p>
+<p>The most impactful aspect of my engagement was bringing stakeholders to the table to see how their customers overlapped. When engaging with a second business within the GE Aerospace portfolio, customers were faced with a similar but different onboarding
+    process. Different systems and people backstage needed information that another part of the business already had. Differences in teams, ERPs, CRMs, and so on led most to ask the customer for their information again, running background checks a second
+    time, and often signing additional contracts. The real problem was that internal complexity was easier to offload to the customer. By the time we untangled and rewrote backstage processes we saw customer wait times reduced by days, volume of troubleshooting
+    cases drop, and an overall reduction in case load for internal admins.
+</p>
+<p>Discovery work led to prioritization of the technology team’s focus on developing a web portal foundation, processes to onboard and authenticate companies and users, and creation of standard work for a support team, all of which aims to tie together an
+    ecosystem of a dozen applications. One by one, customer-facing experiences are being refreshed with updated flows, brand, and copy that ensure customers get what they need quickly, instill confidence in the system, and utilize shared account management,
+    support, and search services. Future iterations of the portals will be driven by prioritization that considers measurable CSAT and CES metrics, and internal productivity goals to keep the support team from being overburdened.
+</p>
+<p>After disengaging from direct team rhythms about a year after their inception, I continued to coach team members, and I feel my greatest achievement in this initiative is my advocacy for CX and UX. I look forward to seeing the team thrive.
+</p>
+<div class="img-tile-mosaic">
+    <picture>
+        <source srcset="img/projects/project-template/image.webp" type="image/webp">
+        <img srcset="img/projects/project-template/image.jpg" sizes="(min-width: 768px)" src="img/projects/project-template/image.jpg" alt="FordPass map UI" class="tile pic-tile">
+    </picture>
+    <div class="tile"><span class="tile-text">CSAT▲</span></div>
+    <div class="tile tile2"><span class="tile-text">TAT▼</span></div>
+    &nbsp;
+    <hr>
+    <div class="projects-label">Would you like to see more?</div>
+    <span class="center"><button class="big-button" type="button" onclick="window.location.href='projects.html'" title="CX, UX, UI, Creative Direction and more"> View Projects</button></span>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
