@@ -669,14 +669,13 @@
             h6,
             p,
             .tldr-label,
-            ul {
-                margin-left: 15%;
-                margin-right: 15%;
-                font-weight: bold;
-            }
+            ul,
             ol {
                 margin-left: 15%;
                 margin-right: 15%;
+            }
+            ul {
+                font-weight: bold;
             }
             .tile-emoji {
                 font-size: 6rem;
